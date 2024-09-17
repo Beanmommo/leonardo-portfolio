@@ -1,11 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import Aura from "@primevue/themes/aura";
 
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   css: ["@/assets/main.scss", "@/assets/main.css"],
   devtools: { enabled: true },
-  modules: ["@primevue/nuxt-module", "@pinia/nuxt"],
+  modules: ["@primevue/nuxt-module", "@pinia/nuxt", "@nuxtjs/google-fonts"],
   vite: {
     css: {
       preprocessorOptions: {
@@ -16,10 +15,12 @@ export default defineNuxtConfig({
     },
   },
   primevue: {
-    options: {
-      theme: {
-        preset: Aura,
-      },
+    usePrimeVue: false,
+  },
+  googleFonts: {
+    families: {
+      Inter: [400, 700],
     },
+    download: true,
   },
 });
