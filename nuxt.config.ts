@@ -4,7 +4,12 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   css: ["@/assets/main.scss", "@/assets/main.css"],
   devtools: { enabled: true },
-  modules: ["@primevue/nuxt-module", "@pinia/nuxt", "@nuxtjs/google-fonts"],
+  modules: [
+    "@primevue/nuxt-module",
+    "@pinia/nuxt",
+    "@nuxtjs/google-fonts",
+    "@nuxtjs/tailwindcss",
+  ],
   vite: {
     css: {
       preprocessorOptions: {
