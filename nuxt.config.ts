@@ -25,6 +25,9 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       Inter: [400, 700],
+      Sacramento: [400],
+      Aboreto: [400],
+      Gotu: [400],
     },
     download: true,
   },
