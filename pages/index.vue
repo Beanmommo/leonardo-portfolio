@@ -1,9 +1,5 @@
 <template>
-    <div class="computer">
-        <div class="screen">
-            Computer Screen
-        </div>
-    </div>
+    COMPUTER SCREEN
 </template>
 
 <style scoped lang="scss"></style>

@@ -1,21 +1,24 @@
 <template>
-    <div class="computer">
-        <AppHeader />
+    <!-- <div class="computer">
+        <FileExplorer />
         <div class="container">
             <slot />
         </div>
-    </div>
+    </div> -->
+    <ResizeableBar class="resizeable-bar">
+        <template #left>
+            <FileExplorer />
+        </template>
+        <template #right>
+            <div class="container">
+                <slot />
+            </div>
+        </template>
+    </ResizeableBar>
 </template>
 
 <style scoped lang="scss">
-.computer {
-    display: grid;
-    row-gap: 16px;
-}
-
-.container {
-    padding: 16px;
-    border: 1px solid #000;
-    height: calc(100vh - 8*$padding);
+.resizeable-bar {
+    margin: 0;
 }
 </style>
